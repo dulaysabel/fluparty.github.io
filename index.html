@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FluParty</title>
+    <meta name="description" content="Diversión para tus fiestas">
+  	<meta name="keywords" content="Flu Party, inflables, parques">
+	<link rel="shortcut icon" href="img/favicon.ico" />
+	<!-- Font Awesome -->
+    <link rel="stylesheet" href="fontawesome-6.2.1/css/all.min.css" />
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/fluparty.css">
+	<link rel="stylesheet" href="css/animate.css">	
+</head>
+
+<body>
+
+	<!-- Boton hacia arriba -->
+	<a class="up"  javascript:void(0) title="Volver arriba">
+		<span class="fa-stack">
+			<i class="fa-solid fa-circle-arrow-up fa-xl"></i>
+		</span>
+	</a> 
+
+	<header class="">
+		<div class="p-3 sub-nav d-flex justify-content-end">
+			<div class="nav-social">
+				<ul>
+					<li class="wow animated zoomIn"><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+					<li class="wow animated zoomIn"><a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+				</ul>
+			</div>
+		</div>
+    	<nav class="navbar navbar-expand-lg bg-body-tertiary py-4 mx-2">
+			<div class="container-fluid justify-content-between">
+			  <a class="navbar-brand" href="index.html"><img src="img/fluparty.jpg" alt="Fluparty" title="Fluparty"></a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+				<ul class="navbar-nav  ">
+				  <li class="nav-item">
+					<a class="nav-link active fw-bold" aria-current="page" href="index.html">Inicio</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link fw-bold" href="about.html">Nosotros</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Entretenimiento
+					</a>
+					<ul class="dropdown-menu w-100">
+					  <li><a class="dropdown-item my-1" href="category.html"><i class="fa-solid fa-shapes"></i> Inflables</a></li>
+					  <li><a class="dropdown-item my-1" href="#"><i class="fa-solid fa-shapes"></i> Parques</a></li>
+					  <li><a class="dropdown-item my-1" href="#"><i class="fa-solid fa-shapes"></i> Estaciones</a></li>
+					</ul>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link fw-bold" aria-disabled="true">Contacto</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section class="banner position-relative">
+			<div class="overlay"></div>
+			<div class="banner_title--container position-relative">
+				<h1 class="animated slideInLeft">Diversión para tus fiestas</h1>
+				<div class="mt-5">
+					<a href="" class="btn rounded-pill py-3 px-5">Descúbrelo aquí</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="main_content text-center bg-white rounded-top shadow-lg py-4 mx-5">
+			<div class="container home">
+			<div class="row justify-content-center gy-4">
+				<div class="col-10 col-md-4">
+					<img src="img/services_2.jpg" class="img-fluid rounded-circle shadow" alt="Inflables" />
+					<p class="mt-2 fw-semibold">Inflabes</p>
+				</div>
+				<div class="col-10 col-md-4">
+					<img src="img/services_1.jpg" class="img-fluid rounded-circle shadow" alt="Parques" />
+					<p class="mt-2 fw-semibold">Parques</p>
+				</div>
+				<div class="col-10 col-md-4">
+					<img src="img/services_3.jpg" class="img-fluid rounded-circle shadow" alt="Estaciones" />
+					<p class="mt-2 fw-semibold">Estaciones</p>
+				</div>
+			</div>
+			</div>
+		</section>
+
+		<section class="register_container py-4">
+			<div class="container text-center">
+				<div class="py-5">
+					<p class="fw-bold animated slideInRight">Escríbenos y con gusto responderemos todas tus preguntas. <br>Estamos aquí para ayudarte a hacer de tu evento algo inolvidable</p>
+				</div>
+				<a href="#" class="btn rounded-pill py-3 px-5">Escríbenos</a>
+			</div>
+		</section>
+
+		<section class="gallery_events py-5">
+			<div class="container">
+				<h2 class="text-center mb-4">Galería de Eventos</h2>
+
+				<!-- Filtros -->
+				<div class="text-center mb-4">
+					<button class="btn rounded-pill mx-1 py-3 px-5 filter-btn" data-filter="all">Todos</button>
+					<button class="btn rounded-pill mx-1 py-3 px-5 filter-btn" data-filter="fil1">Decoración</button>
+					<button class="btn rounded-pill mx-1 py-3 px-5 filter-btn" data-filter="fil2">Inflables</button>
+					<button class="btn rounded-pill mx-1 py-3 px-5 filter-btn" data-filter="fil3">Estaciones</button>
+				</div>
+
+				<!-- Galería -->
+				<div class="row g-4 galeria-grid">
+					<div class="col-6 col-md-4 col-lg-4 gallery-item fil1 main" data-filter="fil1">
+						<div class="position-relative overflow-hidden rounded shadow">
+						<img src="img/img1.jpg" class="img-fluid" alt="Decoración">
+						<div class="overlay">
+							<p class="text-white fw-semibold m-0">Decoración</p>
+						</div>
+						</div>
+					</div>
+
+					<div class="col-6 col-md-4 col-lg-4 gallery-item fil2 main" data-filter="fil2">
+						<div class="position-relative overflow-hidden rounded shadow">
+						<img src="img/img1.jpg" class="img-fluid" alt="Inflables">
+						<div class="overlay">
+							<p class="text-white fw-semibold m-0">Inflables</p>
+						</div>
+						</div>
+					</div>
+
+					<div class="col-6 col-md-4 col-lg-4 gallery-item fil3 main" data-filter="fil3">
+						<div class="position-relative overflow-hidden rounded shadow">
+						<img src="img/img1.jpg" class="img-fluid" alt="Estaciones">
+						<div class="overlay">
+							<p class="text-white fw-semibold m-0">Estaciones</p>
+						</div>
+						</div>
+					</div>
+
+					<!-- Agrega más imágenes y clases según categoría -->
+
+					<!-- Decoracion -->
+					<div class="col-6 col-md-4 col-lg-3 gallery-item fil1">
+						<div class="position-relative overflow-hidden rounded shadow">
+							<img src="img/img1-1.png" class="img-fluid" alt="Decoracion 01">
+							<div class="overlay">
+							<p class="text-white fw-semibold m-0">Decoracion 01</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Decoracion -->
+					<div class="col-6 col-md-4 col-lg-3 gallery-item fil1">
+						<div class="position-relative overflow-hidden rounded shadow">
+							<img src="img/img1-1.png" class="img-fluid" alt="Decoracion 02">
+							<div class="overlay">
+							<p class="text-white fw-semibold m-0">Decoracion 02</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Inflables -->
+					<div class="col-6 col-md-4 col-lg-3 gallery-item fil2">
+						<div class="position-relative overflow-hidden rounded shadow">
+							<img src="img/img2-1.png" class="img-fluid" alt="Inflable 01">
+							<div class="overlay">
+							<p class="text-white fw-semibold m-0">Inflable 01</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Estaciones -->
+					<div class="col-6 col-md-4 col-lg-3 gallery-item fil3">
+						<div class="position-relative overflow-hidden rounded shadow">
+							<img src="img/img3-1.png" class="img-fluid" alt="Estacion 01">
+							<div class="overlay">
+							<p class="text-white fw-semibold m-0">Estacion 01</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer text-white pt-5">
+			<div class="container">
+				<div class="row d-flex align-items-start text-center text-md-start">
+
+					<!-- Logo -->
+					<div class="col-12 col-md-4 mb-4 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
+						<img src="img/fluparty.png" alt="Logo" class="mb-3" style="max-width: 150px;">
+					</div>
+
+					<div class="d-none d-lg-flex align-items-stretch col-auto justify-content-center">
+						<div class="border-divider"></div>
+					</div>
+
+					<!-- Contacto -->
+					<div class="col-12 col-md-3 mb-4 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
+						<h5 class="fw-semibold">Contacto</h5>
+						<p class="mb-1"><i class="bi bi-telephone-fill me-2"></i>+58 000-0000000</p>
+						<p class="mb-1"><i class="bi bi-envelope-fill me-2"></i>correo@ejemplo.com</p>
+						<p class="mb-0"><i class="bi bi-geo-alt-fill me-2"></i>Dirección completa</p>
+					</div>
+
+					<div class="d-none d-md-flex align-items-stretch col-auto justify-content-center">
+						<div class="border-divider"></div>
+					</div>
+
+					<!-- Redes sociales -->
+					<div class="col-12 col-md-3 d-flex flex-column align-items-center align-items-md-start footer-social">
+						<h5 class="fw-semibold">Síguenos</h5>
+						<ul>
+							<li class="animated zoomIn"><a href="#" class="text-white me-3"><i class="fa-brands fa-instagram"></i></a></li>
+							<li class="animated zoomIn"><a href="#" class="text-white me-3"><i class="fa-brands fa-whatsapp"></i></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Línea horizontal -->
+				<hr class="border-light my-4">
+
+				<div class="text-center small pb-3">
+					&copy; 2025 TuNombre o Empresa. Todos los derechos reservados.
+				</div>
+			</div>
+		</footer>
+	</main>
+
+
+		
+	<!-- Essential jQuery Plugins
+	================================================== -->
+
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+	<!-- Bootstrap -->
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	<script>
+		function up(){
+			$('.up').click(function(){ $('body,html').animate({ scrollTop:'0px' },1000); });
+			$(window).scroll(function(){
+				if($(this).scrollTop() > 0){ $('.up').slideDown(600); }else{ $('.up').slideUp(600); }
+			});
+		}
+
+	
+		up();
+
+		document.addEventListener("DOMContentLoaded", () => {
+			const filterButtons = document.querySelectorAll(".filter-btn");
+			const galleryItems = document.querySelectorAll(".gallery-item");
+
+			// Oculta todas las imágenes al iniciar excepto las principales
+			galleryItems.forEach(item => {
+				if (!item.classList.contains("main")) {
+				item.classList.add("hidden");
+				}
+			});
+
+			function applyFilter(filter) {
+				galleryItems.forEach(item => {
+				if (filter === "all") {
+					item.classList.toggle("hidden", !item.classList.contains("main"));
+				} else {
+					item.classList.toggle("hidden", !item.classList.contains(filter));
+				}
+				});
+
+				// Activar visualmente el botón correspondiente
+				filterButtons.forEach(btn => {
+				btn.classList.toggle("active", btn.getAttribute("data-filter") === filter);
+				});
+			}
+
+			// Eventos en los botones
+			filterButtons.forEach(button => {
+				button.addEventListener("click", () => {
+				const filter = button.getAttribute("data-filter");
+				applyFilter(filter);
+				});
+			});
+
+			// Eventos en imágenes principales
+			const mainImages = document.querySelectorAll(".gallery-item.main");
+			mainImages.forEach(image => {
+				image.addEventListener("click", () => {
+				const filter = image.getAttribute("data-filter");
+				applyFilter(filter);
+				});
+			});
+		});
+
+
+
+
+
+	</script>
+</body>
+</html>
