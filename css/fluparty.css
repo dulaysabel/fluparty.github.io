@@ -1,0 +1,528 @@
+/*********************************************/
+/*****                                   *****/
+/*****  Documento CSS                    *****/
+/*****                                   *****/
+/*****  Fecha: 08/12/2017                *****/
+/*****  Actualizacion: 06/06/2024        *****/
+/*****  Autor: Dulayne Rosales           *****/
+/*****                                   *****/
+/*********************************************/
+
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap";
+@import "https://fonts.googleapis.com/css?family=Indie+Flower";
+
+/*********************************************/
+:root {
+    --basic: #252525;
+    --purple: #633894;
+    --secondary-purple: #824274;
+    --soft-blue: #8FA3E9;
+    --yellow: #FFAC32;
+    --gray: #D6D6D6;
+    --white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;  
+    margin: 0;
+    padding: 0;
+}
+
+a, a:hover, a:focus, .btn:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--basic);
+}
+
+.up {
+    display: none;
+    background-repeat: no-repeat;
+    font-size:2.0rem;
+    color: var(--blue);
+    cursor: pointer;
+    position: fixed;
+    bottom: 28px;
+    right: 0px;
+    z-index: 1001; 
+    text-shadow: var(--white) 0 -2px;
+}
+
+html {
+    font-size: 77.5%;
+   
+    line-height: 24px;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    color: var(--basic);
+    min-height: 100vh;
+     font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    background-color: rgba(250,250,250,0.9);
+    padding: 0 !important;
+}
+
+header img {
+    width: 170px;
+    /*height: 60px;*/
+}
+
+header .navbar-nav > li > a {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+header .sub-nav {
+    background-color: var(--purple);
+}
+
+header .sub-nav .nav-social ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+header .sub-nav .nav-social ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+header .sub-nav .nav-social ul li a {
+    color: var(--white);
+    font-size: 1.8rem;
+    display: block;
+
+    -webkit-transition: all 0.2s ease 0s;
+        -moz-transition: all 0.2s ease 0s;
+         -ms-transition: all 0.2s ease 0s;
+          -o-transition: all 0.2s ease 0s;
+             transition: all 0.2s ease 0s;
+}
+
+header .navbar .dropdown-menu {
+    padding: 5px;
+}
+header .navbar .dropdown-menu .dropdown-item{
+    font-size: 1.4rem;
+}
+
+.banner {
+    background-image: url("../img/bg_.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-width: 320px;
+   
+    position: relative;
+}
+
+.banner-internal {
+    background-image: url("../img/bg02.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-width: 220px;
+   
+    position: relative;
+}
+
+.overlay {
+    position: absolute;   
+    width: 100%;
+    top: 0;    
+    background-color: #000;   
+    opacity: 0.5;
+    height: 100%;
+    z-index: 1;
+}
+
+.banner_title--container {
+    min-width: 288px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    min-height: 300px;
+}
+
+.banner_title--container h1 {
+    font-size: 3.6rem;
+    color:var(--white);
+    padding-top: 60px;
+    font-weight: bold;
+    font-family: 'Indie Flower', sans-serif;
+}
+
+.banner_title--container p {
+    font-size: 1.4rem;
+    color:var(--white);
+    line-height: 1.8rem;
+}
+
+.banner_title--container .btn, .register_container .btn {
+    background-color: var(--yellow);
+    text-transform: none;
+    color: var(--white);
+    font-weight: bold;
+    border: 2px solid var(--white);
+    margin-right: 5px;
+    font-size: 1.4rem;
+}
+
+.banner_title--container .btn:hover, .register_container .btn:hover {
+    background-color: var(--purple);
+    color: var(--white);
+    border: none;
+}
+
+.banner_title--incontainer {
+    min-width: 288px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    min-height: 200px;
+}
+
+.banner_title--incontainer h1 {
+    font-size: 2.9rem;
+    color:var(--white);
+    padding-top: 60px;
+    font-weight: bold;
+    font-family: 'Indie Flower', sans-serif;
+}
+
+  
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--white);
+}
+
+.main_content {
+    margin-top: -40px; /* Esto lo sube sobre el banner */
+    position: relative;
+    z-index: 5;
+    background-color: white;
+    border-top-left-radius: 20rem;
+    border-top-right-radius: 20rem;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.15);
+    padding: 1.5rem 1rem;
+    border-top: solid 20px var(--purple);
+}
+
+
+.main_content img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+}
+
+.main_content  p {
+    font-size: 3.6rem;
+    color: var(--purple);
+    font-family: 'Indie Flower', sans-serif;
+    text-align: center;
+}
+
+/*********************************************/
+/*****              HOME                ******/
+/*********************************************/
+
+.register_container {
+    background-color: var(--soft-blue);
+    color: var(--white);
+}
+
+.register_container h2{
+    font-size: 2.8rem;
+    color: var(--white);
+}
+
+.register_container a{
+   text-transform: uppercase;
+} 
+
+/**gallery**/
+
+.gallery_events h2 {
+    font-size: 3.2rem;
+    font-family: 'Indie Flower', sans-serif; 
+}
+
+.gallery_events .btn {
+    border-color: var(--secondary-purple);
+    color: var(--secondary-purple);
+    font-weight: bold;
+    margin: 5px;
+}
+
+.gallery_events .btn:hover {
+    background-color: var(--secondary-purple);
+    color: white;
+}
+
+.gallery_events .gallery-item {
+  display: block;
+  transition: transform 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gallery_events .gallery-item img {
+  transition: transform 0.3s ease;
+
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  transition: 0.3s ease;
+}
+
+.gallery-item {
+  opacity: 1;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.gallery-item p{
+  font-size: 1.9rem;
+}
+
+.gallery-item.hidden {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transform: scale(0.95);
+}
+.filter-btn.active {
+  background-color: var(--purple);
+  color: white;
+}
+
+
+/*********************************************/
+/*****       Internas       ******************/
+/*********************************************/
+
+.banner-internal--bg{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+}
+
+.bg--img  {
+    background-image: url(../img/slider/nosotros.jpg);
+}
+
+.bg--img-1 {
+    background-image: url(../img/slider/servicio.jpg);
+}
+
+.main_content--internal {
+    margin-top: -40px; /* Esto lo sube sobre el banner */
+    position: relative;
+    z-index: 5;
+    background-color: white;
+    border-top-left-radius: 20rem;
+    border-top-right-radius: 20rem;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.15);
+    padding: 1.5rem 1rem;
+    border-top: solid 20px var(--purple);
+    background-image: url("../img/bg_internal.jpg");
+}
+
+.main_content--internal  h1{
+    font-weight: bold;
+}
+
+
+.main_content--internal .title {
+    font-size: 2.1rem;
+    color: var(--purple);
+    font-family: 'Indie Flower', sans-serif;
+}
+
+.main_content--internal span, .main_content--internal p{
+    font-size: 1.2rem;
+    text-align: justify;
+    color: var(--basic);
+}
+
+
+
+/*********************************************/
+/*****       FOOTER         ******************/
+/*********************************************/
+.footer {
+    line-height: 1.6;
+    background-color: var(--yellow);
+}
+
+.footer h5 {
+    font-size: 1.8rem;
+    font-family: 'Indie Flower', sans-serif; 
+}
+
+.footer .border-divider {
+    width: 2px;
+    background-color:white ;
+    height: 100px;
+    margin: 0 1rem;
+}
+
+.footer .footer-social ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+  
+.footer .footer-social ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+  
+.footer .footer-social ul li a {
+    color: #FFF;
+    font-size: 1.9rem;
+    display: block;
+
+    -webkit-transition: all 0.2s ease 0s;
+        -moz-transition: all 0.2s ease 0s;
+         -ms-transition: all 0.2s ease 0s;
+          -o-transition: all 0.2s ease 0s;
+             transition: all 0.2s ease 0s;
+}
+  
+
+/* Imagen utilizada en pantallas de anchura 480 px y superior */
+@media (min-width: 480px) {
+    .banner {
+        background-image: url("../img/bg.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-width: 320px;
+    }
+
+    .banner_title--container h1 {
+        font-size: 6.9rem;
+    }
+
+    .main_services .col-10 {
+		max-width: 45%;
+	}
+}
+
+/* Imagen utilizada en pantallas de anchura 768 px y superior */
+@media (min-width: 768px) {
+    .banner {
+        background-image: url("../img/bg.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-width: 320px;
+    }
+
+    .main_services .row {
+		flex-wrap: nowrap;
+	}
+
+	.main_services .col-10 {
+		max-width: 30%;
+	}
+
+	.main_services {
+		top: 85%;
+	}
+
+    .gallery_events .btn {
+        font-size: 1.4rem;
+    }
+
+    .footer .border-md-end {
+        border-right: none !important;
+    } 
+
+     /* Línea divisoria entre columnas (solo en desktop) */
+    .border-divider {
+        width: 1px;
+        background-color: rgba(255, 255, 255, 0.3);
+        height: 100%;
+        margin: 0 1rem;
+    }
+
+}
+
+/* Imagen utilizada en pantallas de anchura 1200 px y superior */
+@media (min-width: 1200px) {
+    .banner {
+        background-image: url("../img/bg_.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-width: 320px;
+    }
+
+    .main_services img {
+		width: 180px;
+		height: 180px;
+	}
+
+    .banner_title--incontainer h1 {
+        font-size: 4.9rem;
+    }
+
+    .register_container p{
+        font-size: 1.8rem;
+    }
+
+    .main_content--internal span, .main_content--internal p{
+        font-size: 1.6rem;
+    }
+
+    .main_content--internal  h1{
+        font-weight: bold;
+        font-size: 2.9rem;
+    }
+
+    .main_content--internal .title {
+        font-size: 2.6rem;
+    }
+
+}
